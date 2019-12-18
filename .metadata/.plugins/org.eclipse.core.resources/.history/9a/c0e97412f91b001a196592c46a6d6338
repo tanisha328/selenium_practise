@@ -1,0 +1,32 @@
+package com.acc_selenium_demo1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Demo2_newtours {
+
+	public static void main(String[] args)  throws InterruptedException{
+	 
+			System.out.println("Hello! selenium");
+			System.setProperty("webdriver.chrome.driver","C:\\driver9999\\chromedriver.exe");
+			ChromeDriver driver=new ChromeDriver(); 
+			driver.get("http://www.newtours.demoaut.com/");
+			driver.findElement(By.linkText("REGISTER")).click();
+			driver.findElement(By.name("firstName")).sendKeys("Tanisha");
+			driver.findElement(By.name("lastName")).sendKeys("Bisht");
+			driver.findElement(By.name("phone")).sendKeys("987456321");
+			WebElement cnt=driver.findElement(By.name("country"));
+			Select s1=new Select(cnt);
+					s1.selectByVisibleText("INDIA");
+			Thread.sleep(2000);
+			s1.selectByValue("94");
+			Thread.sleep(2000);
+			s1.selectByIndex(96);
+			driver.findElement(By.name("register")).click();
+			Thread.sleep(2000);
+			driver.close();
+	}
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.acc_selenium_demo1.Rediff_practise">
+        <methods>
+          <include name="account"/>
+          <include name="launch_browser"/>
+        </methods>
+      </class> <!-- com.acc_selenium_demo1.Rediff_practise -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

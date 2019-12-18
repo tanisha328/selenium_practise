@@ -1,0 +1,14 @@
+package com.acc_selenium_demo1;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Hello_selenium {
+
+	public static void main(String[] args) {
+		System.out.println("Hello! selenium");
+		System.setProperty("webdriver.chrome.driver","C:\\driver9999\\chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver(); 
+		driver.get("https://www.google.com/");
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.acc_selenium_demo1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo2_newtours {
+
+	public static void main(String[] args)  throws InterruptedException{
+	 {
+			System.out.println("Hello! selenium");
+			System.setProperty("webdriver.chrome.driver","C:\\driver9999\\chromedriver.exe");
+			ChromeDriver driver=new ChromeDriver(); 
+			driver.get("http://www.newtours.demoaut.com/");
+			driver.findElement(By.linkText("REGISTER")).click();
+
+	}
+
+}

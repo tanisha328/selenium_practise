@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33017" started-at="2019-12-16T06:29:09Z" finished-at="2019-12-16T06:29:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33017" started-at="2019-12-16T06:29:09Z" finished-at="2019-12-16T06:29:42Z">
+      <class name="Acc_selenium01.Hdfc_netbanking">
+        <test-method status="PASS" signature="launch_browser()[pri:0, instance:Acc_selenium01.Hdfc_netbanking@2f32ff]" name="launch_browser" is-config="true" duration-ms="13248" started-at="2019-12-16T11:59:09Z" finished-at="2019-12-16T11:59:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_browser -->
+        <test-method status="PASS" signature="user_id()[pri:0, instance:Acc_selenium01.Hdfc_netbanking@2f32ff]" name="user_id" duration-ms="19709" started-at="2019-12-16T11:59:23Z" finished-at="2019-12-16T11:59:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_id -->
+      </class> <!-- Acc_selenium01.Hdfc_netbanking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

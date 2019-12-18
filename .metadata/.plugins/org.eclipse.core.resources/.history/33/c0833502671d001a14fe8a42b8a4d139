@@ -1,0 +1,35 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Sign_up_fb {
+	WebDriver driver;
+	@BeforeTest
+	public void launch_browser(){
+		System.setProperty("webdriver.chrome.driver","C:\\driver9999\\chromedriver.exe");
+		 driver=new ChromeDriver(); 
+		driver.get("https://www.facebook.com/campaign/landing.php?campaign_id=1653993517&extra_1=s%7Cc%7C318504236057%7Ce%7Cfacebook%20%27%7C&placement=&creative=318504236057&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D1653993517%26adgroupid%3D63066387003%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-360705453827%26loc_physical_ms%3D1007765%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIl5GS8eix5gIVxqgYCh2F6QwyEAAYASAAEgLMQvD_BwE");
+	}
+@Test
+public void sign_up(){
+	driver.findElement(By.name("firstname")).sendKeys("TANISHA");
+	driver.findElement(By.name("lastname")).sendKeys("Bisht");
+	driver.findElement(By.name("reg_email__")).sendKeys("tan@gmail.com");
+	driver.findElement(By.name("reg_passwd__")).sendKeys("12365478pwd");
+	WebElement cnt=driver.findElement(By.name("birthday_day"));
+	Select s1=new Select(cnt);
+	WebElement cnt2=driver.findElement(By.name("birthday_month"));
+	Select s2=new Select(cnt2);
+	WebElement cnt3=driver.findElement(By.name("birthday_year"));
+	Select s3=new Select(cnt3);
+			s1.selectByValue("12");
+			s2.selectByVisibleText("Jan");
+			s3.selectByVisibleText("1997");
+	driver.findElement(By.xpath("//*[@id='u_0_6']"));
+}
+
+}

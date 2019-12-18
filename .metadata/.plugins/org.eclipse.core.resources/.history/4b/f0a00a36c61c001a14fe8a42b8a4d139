@@ -1,0 +1,31 @@
+package com.acc_selenium_demo1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class Rediff_practise {
+	WebDriver driver;
+	@BeforeTest
+	public void launch_browser(){
+		System.setProperty("webdriver.chrome.driver","C:\\driver9999\\chromedriver.exe");
+		 driver=new ChromeDriver();
+		 driver.get("https://www.rediff.com/");
+}
+	@Test
+	public void account(){
+		driver.findElement(By.linkText("Create Account")).click();
+		driver.findElement(By.xpath("//input[@id='tblcrtac']")).sendKeys("tanisha");;
+		/*driver.findElement(By.name("namee6fb5340")).sendKeys("tanisha");
+		driver.findElement(By.name("logine6fb5340")).sendKeys("tan123");
+		driver.findElement(By.name("passwde6fb5340")).sendKeys("pwd123456789");
+		driver.findElement(By.name("confirm_passwde6fb5340")).sendKeys("pwd123456789");
+		driver.findElement(By.name("altemaile6fb5340")).sendKeys("tan13@gmail.com");
+		driver.findElement(By.name("mobnoe6fb5340")).sendKeys("78945612336");
+		driver.findElement(By.name("mobnoe6fb5340")).sendKeys("78945612336");*/
+		
+	}
+	
+}

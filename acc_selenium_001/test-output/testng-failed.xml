@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Acc_selenium01.Hdfc_netbanking">
+        <methods>
+          <include name="user_id"/>
+          <include name="launch_browser"/>
+        </methods>
+      </class> <!-- Acc_selenium01.Hdfc_netbanking -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
